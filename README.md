@@ -20,7 +20,7 @@
 - [x] Force Subscription
 - [x] Automatic File Filtering
 - [x] Double Filter Button
-- [x] Single Filter Button
+- [x] Single Filter .Button
 - [x] Forward Restriction
 - [x] File Protect
 - [x] Manual File Filtering
