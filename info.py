@@ -23,9 +23,9 @@ CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 # Bot images & videos
 PICS = (environ.get('PICS', 'https://te.legra.ph/file/050e7a9f0c4da41f35091.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/5d71941e97b9fc8383ee0.jpg")
+NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/f4e15383abc8b1180f9bb.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/0a5b092e1441fc321acb5.mp4")
-SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/98f14b6697ffec86beeb1.jpg")
+SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/c269b5e30c493584a31b7.jpg")
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1980321098').split()]
@@ -53,7 +53,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001718789952))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'kingBadsha32322_Bot')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CRIMINAL_SOCIETY_INDIA')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
