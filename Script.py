@@ -1,10 +1,9 @@
 class script(object):
-    START_TXT = """𝖸𝗈...𝖸𝗈... {} 💖
+    START_TXT = """Yᴏ...Yᴏ... {} 💖
 
-<b><u>𝖨'𝗆 𝖯𝗈𝗐𝖾𝗋𝖿𝗎𝗅 𝖠𝗎𝗍𝗈-𝖥𝗂𝗅𝗍𝖾𝗋 𝖡𝗈𝗍 𝖸𝗈𝗎 𝖢𝖺𝗇 𝖴𝗌𝖾 𝖬𝖾 𝖠𝗌 𝖠 𝖠𝗎𝗍𝗈-𝖿𝗂𝗅𝗍𝖾𝗋 𝗂𝗇 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉</u></b>
+<b><u>Hɪ Iɴ Hɪɴᴅɪ Aɴɪᴍᴇ Sᴇᴀʀᴄʜ Bᴏᴛ</u></b>
 
-<i>𝖨𝗍𝗌 𝖤𝖺𝗌𝗒 𝖳𝗈 𝖴𝗌𝖾 𝖬𝖾; 𝖩𝗎𝗌𝗍 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 𝖠𝗌 𝖠𝖽𝗆𝗂𝗇, 
-𝖳𝗁𝖺𝗍𝗌 𝖠𝗅𝗅, 𝗂 𝗐𝗂𝗅𝗅 𝖯𝗋𝗈𝗏𝗂𝖽𝖾 𝖬𝗈𝗏𝗂𝖾𝗌 𝖳𝗁𝖾𝗋𝖾...🤓🤪</i>"""
+<i>𝖨Iᴛ's Eᴀsʏ Tᴏ Usᴇ Mᴇ Jᴜsᴛ Sᴇɴᴅ Mᴇ A Aɴɪᴍᴇ Nᴀᴍᴇ Aɴᴅ I ᴡɪʟʟ Sᴇɴᴅ Yᴏᴜ Tʜᴇ Fɪʟᴇs Iɴ Iᴛ's Aᴠᴀɪʟᴀʙʟᴇ Iɴ Hɪɴᴅɪ</i>"""
 
     HELP_TXT = """🙋🏻‍♂️   𝖧𝖾𝗅𝗅𝗈𝗈𝗈  {} 🤓
 
@@ -33,7 +32,7 @@ class script(object):
 ○ 𝖲𝖾𝗋𝗏𝖾𝗋 : Contabo
 ○ 𝖣𝖺𝗍𝖺𝖻𝖺𝗌𝖾 : <a href='https://www.mongodb.com'>𝖬𝗈𝗇𝗀𝗈𝖣𝖡</a>
 ○ 𝖡𝗎𝗂𝗅𝖽 𝖲𝗍𝖺𝗍𝗎𝗌 : v1.0.1 [BeTa]
-○ 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉 : <a href='https://t.me/Suport_Badsha_Studios'>𝖳𝖺𝗉 𝖧𝖾𝗋𝖾</a>"""
+○ 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉 : <a href='https://t.me/+vU1eN4sTQlkyOGM9'>𝖳𝖺𝗉 𝖧𝖾𝗋𝖾</a>"""
 
     SOURCE_TXT = """NAHI MILEGA VRO  """ #please don't change repo link give credit :)
 
@@ -121,7 +120,7 @@ Cᴏᴍᴍᴀɴᴅs Aɴᴅ Usᴀɢᴇ:
 𝖳𝗈𝗍𝖺𝗅 𝖢𝗁𝖺𝗍𝗌: <code>{}</code>
 𝖴𝗌𝖾𝖽 𝖲𝗍𝗈𝗋𝖺𝗀𝖾: <code>{}</code>
 
-<b>😎 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 @Badsha_Stusios</b>"""
+<b>😎 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 @Badsha_Studios</b>"""
 
     LOG_TEXT_G = """#NewGroup
 𝖦𝗋𝗈𝗎𝗉 = {}(<code>{}</code>)
