@@ -40,7 +40,7 @@
 - [x] User Ban
 - [x] User Unban
 - [x] Chat Leave
-- [x] Chat Disable
+- [x] Chat Disable.
 - [x] Channel
 - [x] Spelling Check Feature
 - [x] File Store
