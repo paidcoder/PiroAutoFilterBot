@@ -31,7 +31,7 @@
 - [x] Group Broadcast
 - [x] Index
 - [x] IMDB search
-- [x] Inline Search
+- [x] Inline Searc
 - [x] Random pics
 - [x] ids and User info 
 - [x] Stats
