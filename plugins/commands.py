@@ -25,13 +25,13 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
                 ],[
-                    InlineKeyboardButton('More Bots', url=f"https://t.me/Badsha_Studios"),
+                    InlineKeyboardButton('Main Channel', url=f"https://t.me/+jbyQIehCk8I1MjU1"),
                     InlineKeyboardButton('🧩 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
                     InlineKeyboardButton('ℹ️ 𝖧𝖾𝗅𝗉', callback_data='help'),
                     InlineKeyboardButton('😊 𝖠𝖻𝗈𝗎𝗍', callback_data='about')
                 ],[
-                    InlineKeyboardButton('Anime🧞', url=f"https://t.me/{ALINK}")
+                    InlineKeyboardButton('Backup Channel', url=f"https://t.me/{ALINK}")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -48,13 +48,13 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
                 ],[
-                    InlineKeyboardButton('More Bots', url=f"https://t.me/Badsha_Studios"),
+                    InlineKeyboardButton('Main Channel', url=f"https://t.me/+jbyQIehCk8I1MjU1"),
                     InlineKeyboardButton('🧩 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
                     InlineKeyboardButton('ℹ️ 𝖧𝖾𝗅𝗉', callback_data='help'),
                     InlineKeyboardButton('😊 𝖠𝖻𝗈𝗎𝗍', callback_data='about'),
                 ],[
-                    InlineKeyboardButton('Anime🧞', url=f"https://t.me/{ALINK}")
+                    InlineKeyboardButton('Backup Channel', url=f"https://t.me/{ALINK}")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -96,13 +96,13 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
                 ],[
-                    InlineKeyboardButton('More Bots', url=f"https://t.me/Badsha_Studios"),
+                    InlineKeyboardButton('Main Channel', url=f"https://t.me/+jbyQIehCk8I1MjU1"),
                     InlineKeyboardButton('🧩 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
                     InlineKeyboardButton('ℹ️ 𝖧𝖾𝗅𝗉', callback_data='help'),
                     InlineKeyboardButton('😊 𝖠𝖻𝗈𝗎𝗍', callback_data='about')
                 ],[
-                    InlineKeyboardButton('Anime🧞', url=f"https://t.me/{ALINK}")
+                    InlineKeyboardButton('Backup Channel', url=f"https://t.me/{ALINK}")
                     
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -251,7 +251,7 @@ async def start(client, message):
                 chat_id=message.from_user.id,
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/Badsha_Studios") ] ] ),
+                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/+jbyQIehCk8I1MjU1") ] ] ),
             )
             filetype = msg.media
             file = getattr(msg, filetype.value)
@@ -285,7 +285,7 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/Badsha_Studios") ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/+jbyQIehCk8I1MjU1") ] ] ),
     )
                     
 
