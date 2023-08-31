@@ -896,13 +896,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
                 ],[
-                    InlineKeyboardButton('More Bots', url=f"https://t.me/Badsha_Studios"),
+                    InlineKeyboardButton('Main Channel', url=f"https://t.me/+jbyQIehCk8I1MjU1"),
                     InlineKeyboardButton('🧩 𝖲𝗎𝗉𝗉𝗈𝗋𝗍 𝖦𝗋𝗈𝗎𝗉', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
                     InlineKeyboardButton('ℹ️ 𝖧𝖾𝗅𝗉', callback_data='help'),
                     InlineKeyboardButton('😊 𝖠𝖻𝗈𝗎𝗍', callback_data='about'),
                 ],[
-                    InlineKeyboardButton('Anime🧞', url=f"https://t.me/{ALINK}")
+                    InlineKeyboardButton('Backup Channel', url=f"https://t.me/{ALINK}")
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
