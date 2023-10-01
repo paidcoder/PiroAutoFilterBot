@@ -22,9 +22,9 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '')
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 # Bot images & videos
-PICS = (environ.get('PICS', 'https://telegra.ph/file/66454bedc546fa1045524.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/5d71941e97b9fc8383ee0.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/0a5b092e1441fc321acb5.mp4")
+PICS = (environ.get('PICS', 'https://telegra.ph/file/b83858d2e54333e18803f.jpg https://telegra.ph/file/0fcc2eff45b8db267038e.jpg https://telegra.ph/file/5c58f8ec35bd62a5b04d6.jpg')).split()
+NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/46443096bc6895c74a716.jpg https://telegra.ph/file/225f3f15a9e3230188811.jpg https://telegra.ph/file/703c3040bcd811991aae5.jpg")
+MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/f7f2a532fe4b990044507.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/98f14b6697ffec86beeb1.jpg")
 
 # Admins, Channels & Users
@@ -32,7 +32,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001525431593').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', "-1001691735001")
+auth_channel = environ.get('AUTH_CHANNEL', "-1001952179860")
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -48,12 +48,12 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "PIRO")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'FILES')
 
 # Others 
-ALINK = environ.get('ALINK', 'AKD_ANIMES')
+ALINK = environ.get('ALINK', '+9DAPl0p1iJ1lZjdk')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001718789952))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'kingBadsha32322_Bot')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Aham214')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
