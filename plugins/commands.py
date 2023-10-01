@@ -147,7 +147,7 @@ async def start(client, message):
                 file_id=file.file_id,
                 caption=f_caption,
                 protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ UPDATEDS ⚔️', url="https://t.me/Badsha_Studios") ] ] ),
+                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ UPDATEDS ⚔️', url="https://t.me/Flim_Seva") ] ] ),
             )
         return
     
