@@ -49,11 +49,12 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'FILES')
 
 # Others 
 ALINK = environ.get('ALINK', '+9DAPl0p1iJ1lZjdk')
+INDEX = environ.get('INDEX', 'AKD_MOVIES')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001718789952))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Aham214')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+8ROwp-7WLSI2NjI8')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
