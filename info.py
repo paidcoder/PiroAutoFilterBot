@@ -39,22 +39,22 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 support_chat_id = environ.get('SUPPORT_CHAT_ID')
 reqst_channel = environ.get('REQST_CHANNEL_ID')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
-SUPPORT_CHAT_ID = -1001577611642
+SUPPORT_CHAT_ID = -1001871898950
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Aham:pass@cluster0.n7rzgvu.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "PIRO")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Web")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'FILES')
 
 # Others 
-ALINK = environ.get('ALINK', '+9DAPl0p1iJ1lZjdk')
-INDEX = environ.get('INDEX', 'AKD_MOVIES')
+ALINK = environ.get('ALINK', 'moviemateeupdates')
+CLINK = environ.get('CLINK', 'moviematee')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001888809558))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+8ROwp-7WLSI2NjI8')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+KPFpEQLzHndjMWNl')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
