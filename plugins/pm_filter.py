@@ -540,7 +540,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         file_id=file_id,
                         caption=f_caption,
                         protect_content=True if ident == "filep" else False,
-                        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ UPDATES ⚔️', url="https://t.me/Film_Seva") ] ] ))
+                        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ UPDATES ⚔️', url="https://t.me/moviemateeupdates") ] ] ))
                 else:
                     await query.answer(f"𝖧𝖾𝗒 {query.from_user.first_name}, 𝖳𝗁𝗂𝗌 𝗂𝗌 𝗇𝗈𝗍 𝗒𝗈𝗎𝗋 𝗋𝖾𝗊𝗎𝖾𝗌𝗍 !", show_alert=True)
                 await query.answer('𝖢𝗁𝖾𝖼𝗄 𝖯𝖬, 𝖨 𝗁𝖺𝗏𝖾 𝗌𝖾𝗇𝗍 𝖿𝗂𝗅𝖾𝗌 𝗂𝗇 𝖯𝖬', show_alert=True)
@@ -578,7 +578,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             file_id=file_id,
             caption=f_caption,
             protect_content=True if ident == 'checksubp' else False,
-            reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ UPDATEDS  ⚔️', url="https://t.me/FilM_SEVA") ] ] ))
+            reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ UPDATEDS  ⚔️', url="https://t.me/moviemateeupdates") ] ] ))
     elif query.data == "pages":
         await query.answer()
 
@@ -896,15 +896,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
                 ],[
-                    InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url=f"https://t.me/+TNfxsmOgN7k2YjVk"),
+                    InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url=f"https://t.me/{CLINK}"),
                     InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
-                    InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about'),
-                ],[
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f"https://t.me/{ALINK}")
-                ],[
-                    InlineKeyboardButton('Iɴᴅᴇx', url=f"https://t.me/{INDEX}")
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f"https://t.me/{ALINK}")                
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
