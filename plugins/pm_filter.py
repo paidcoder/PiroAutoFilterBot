@@ -5,7 +5,7 @@ import math
 import random
 lock = asyncio.Lock()
 
-from info import ALINK, INDEX
+from info import ALINK, INDEX, CLINK
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
 import pyrogram
