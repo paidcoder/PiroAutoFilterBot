@@ -6,6 +6,7 @@ from database.users_chats_db import db
 from database.ia_filterdb import Media
 from utils import get_size, temp, get_settings
 from Script import script
+from info import ALINK 
 from pyrogram.errors import ChatAdminRequired
 import asyncio 
 
