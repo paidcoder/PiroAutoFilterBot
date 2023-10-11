@@ -2,7 +2,7 @@ import os
 import logging
 import random
 import asyncio 
-from info import ALINK, INDEX
+from info import ALINK, INDEX, CLINK
 from Script import script
 from pyrogram import Client, filters, enums
 from pyrogram.errors import ChatAdminRequired, FloodWait
@@ -23,17 +23,12 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+                    InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
                 ],[
-                    InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url=f"https://t.me/+TNfxsmOgN7k2YjVk"),
+                    InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url=f"https://t.me/{CLINK}"),
                     InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
-                    InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
-                ],[
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f"https://t.me/{ALINK}")
-                ],[
-                    InlineKeyboardButton('Iɴᴅᴇx', url=f"https://t.me/{INDEX}")
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f"https://t.me/{ALINK}")                
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -48,17 +43,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+                    InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
                 ],[
-                    InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url=f"https://t.me/+TNfxsmOgN7k2YjVk"),
+                    InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url=f"https://t.me/{CLINK}"),
                     InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
-                    InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
-                ],[
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f"https://t.me/{ALINK}")
-                ],[
-                    InlineKeyboardButton('Iɴᴅᴇx', url=f"https://t.me/{INDEX}")
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f"https://t.me/{ALINK}")                
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -98,17 +88,12 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
+                    InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f"http://t.me/{temp.U_NAME}?startgroup=true")
                 ],[
-                    InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url=f"https://t.me/+TNfxsmOgN7k2YjVk"),
+                    InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url=f"https://t.me/{CLINK}"),
                     InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f"https://t.me/{SUPPORT_CHAT}")
                 ],[
-                    InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
-                ],[
-                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f"https://t.me/{ALINK}")
-                ],[
-                    InlineKeyboardButton('Iɴᴅᴇx', url=f"https://t.me/{INDEX}")
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url=f"https://t.me/{ALINK}")                
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -147,7 +132,7 @@ async def start(client, message):
                 file_id=file.file_id,
                 caption=f_caption,
                 protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ UPDATEDS ⚔️', url="https://t.me/Film_Seva") ] ] ),
+                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ UPDATEDS ⚔️', url="https://t.me/moviemateeupdates") ] ] ),
             )
         return
     
@@ -183,7 +168,7 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/Film_Seva") ] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/moviemateeupdates") ] ] ),
                     
                 )
             except FloodWait as e:
@@ -194,7 +179,7 @@ async def start(client, message):
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/Film_Seva") ] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/moviemateeupdates") ] ] ),
                 )
             except Exception as e:
                 logger.warning(e, exc_info=True)
@@ -256,7 +241,7 @@ async def start(client, message):
                 chat_id=message.from_user.id,
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/Film_Seva") ] ] ),
+                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/moviemateeupdates") ] ] ),
             )
             filetype = msg.media
             file = getattr(msg, filetype.value)
@@ -290,7 +275,7 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/Film_Seva") ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚔️ 𝖴𝖯𝖣𝖠𝖳𝖤𝖲 ⚔️', url="https://t.me/moviemateeupdates") ] ] ),
     )
                     
 
