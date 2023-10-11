@@ -2,7 +2,7 @@ import os
 import logging
 import random
 import asyncio 
-from info import ALINK, INDEX, CLINK
+from info import ALINK, CLINK
 from Script import script
 from pyrogram import Client, filters, enums
 from pyrogram.errors import ChatAdminRequired, FloodWait
