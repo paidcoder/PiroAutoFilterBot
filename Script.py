@@ -1,9 +1,9 @@
 class script(object):
-    START_TXT = """Yᴏ...Yᴏ... {} 💖
+    START_TXT = """Hey... {} 💖
 
 <b><u>Hɪ Iᴍ Mᴏᴠɪᴇ  Sᴇᴀʀᴄʜ Bᴏᴛ</u></b>
 
-<i>𝖨Iᴛ's Eᴀsʏ Tᴏ Usᴇ Mᴇ Jᴜsᴛ Sᴇɴᴅ Mᴇ A Aɴɪᴍᴇ Nᴀᴍᴇ Aɴᴅ I ᴡɪʟʟ Sᴇɴᴅ Yᴏᴜ Tʜᴇ Fɪʟᴇs Iɴ Iᴛ's Aᴠᴀɪʟᴀʙʟᴇ Iɴ Hɪɴᴅɪ</i>"""
+<i>𝖨Iᴛ's Eᴀsʏ Tᴏ Usᴇ Mᴇ Jᴜsᴛ Sᴇɴᴅ Mᴇ A Mᴏᴠɪᴇ Nᴀᴍᴇ Aɴᴅ I ᴡɪʟʟ Sᴇɴᴅ Yᴏᴜ Tʜᴇ Fɪʟᴇs Iɴ Iᴛ's Aᴠᴀɪʟᴀʙʟᴇ Iɴ Hɪɴᴅɪ</i>"""
 
     HELP_TXT = """🙋🏻‍♂️   𝖧𝖾𝗅𝗅𝗈𝗈𝗈  {} 🤓
 
