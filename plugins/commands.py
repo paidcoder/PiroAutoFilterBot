@@ -67,7 +67,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 𝖩𝗈𝗂𝗇 𝖴𝗉𝖽𝖺𝗍𝖾𝗌 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 🤖", url=invite_link.invite_link
+                    "Join Our Channel to get movies 🍿", url=invite_link.invite_link
                 )
             ]
         ]
@@ -76,9 +76,9 @@ async def start(client, message):
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
-                btn.append([InlineKeyboardButton("🔄 𝖳𝗋𝗒 𝖠𝗀𝖺𝗂𝗇 🔄", callback_data=f"{pre}#{file_id}")])
+                btn.append([InlineKeyboardButton("✅ Done ", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton("🔄 𝖳𝗋𝗒 𝖠𝗀𝖺𝗂𝗇 🔄", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                btn.append([InlineKeyboardButton("✅ Done ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text="**Please Join My Updates Channel to use this Bot!**",
