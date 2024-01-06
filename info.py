@@ -22,14 +22,14 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '')
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 # Bot images & videos
-PICS = (environ.get('PICS', 'https://te.legra.ph/file/050e7a9f0c4da41f35091.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/645f291eb225c48455334.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/f4e15383abc8b1180f9bb.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/0a5b092e1441fc321acb5.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/c269b5e30c493584a31b7.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1980321098').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001525431593 -1001893074322').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1616365372 1980321098').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001932615542').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL', "-1001691634552")
@@ -48,7 +48,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "PIRO")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'FILES')
 
 # Others 
-ALINK = environ.get('ALINK', 'CRIMINAL_SOCIETY_NETWORK')
+ALINK = environ.get('ALINK', 'GUDDU_BOLTE')
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
