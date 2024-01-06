@@ -1,9 +1,6 @@
 class script(object):
-    START_TXT = """Yᴏ...Yᴏ... {} 💖
-
-<b><u>Hɪ Iᴍ Mᴏᴠɪᴇ  Sᴇᴀʀᴄʜ Bᴏᴛ</u></b>
-
-<i>Iᴛ's Eᴀsʏ Tᴏ Usᴇ Mᴇ Jᴜsᴛ Sᴇɴᴅ Mᴇ A Mᴏᴠɪᴇ Oʀ Sᴇʀɪᴇs Nᴀᴍᴇ Aɴᴅ I ᴡɪʟʟ Sᴇɴᴅ Yᴏᴜ Tʜᴇ Fɪʟᴇs Iɴ Iᴛ's Aᴠᴀɪʟᴀʙʟᴇ Iɴ Mʏ Dᴀᴛᴀʙᴀsᴇ</i>"""
+    START_TXT = """Hy Prince !,
+I'm a bot made for @GUDDU_BOLTE  I can help you find movies.🙂 For any enquiry contact Admin @GUDDU_BOLTE</i>"""
 
     HELP_TXT = """🙋🏻‍♂️   𝖧𝖾𝗅𝗅𝗈𝗈𝗈  {} 🤓
 
@@ -23,7 +20,7 @@ class script(object):
 
 𝖣𝗈𝗇𝗍 𝖲𝗉𝖺𝗆 𝖬𝖾...🤒
 
-😎 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 @Badsha_Studios"""
+😎 𝖯𝗈𝗐𝖾𝗋𝖾𝖽 𝖻𝗒 @GUDDU_BOLTE"""
 
     ABOUT_TXT = """<b>○ 𝖬𝗒 𝖭𝖺𝗆𝖾: {}
 ○ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋 : <a href='https://t.me/Badsha_Studios'>𝖳𝗁𝗂𝗌 𝖯𝖾𝗋𝗌𝗈𝗇</a>
