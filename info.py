@@ -43,7 +43,7 @@ SUPPORT_CHAT_ID = -1001871898950
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hitennewgithub:rHC0lNjG2ZEQ64Hf@cluster0.yefqsp1.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hitengithub:alGl7MyHtbcTh5Sw@cluster0.d3n3eqg.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "MovK")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'FILES')
 
